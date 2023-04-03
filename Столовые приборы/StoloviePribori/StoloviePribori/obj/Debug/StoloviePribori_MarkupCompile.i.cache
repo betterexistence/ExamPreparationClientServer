@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\4ИС2\4is2\babaev\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\
+D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\
 StoloviePribori
 none
 false
 DEBUG;TRACE
-D:\4ИС2\4is2\babaev\Столовые приборы\StoloviePribori\StoloviePribori\App.xaml
-2-406020297
+D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\App.xaml
+3-1547615791
 2-246117042
-18305175962
-18-900890909
-MainWindow.xaml;StoloviePriboriWindow.xaml;
+19-1016214221
+18157132684
+MainWindow.xaml;Pages\ProductsPage.xaml;StoloviePriboriWindow.xaml;
 
 True
 

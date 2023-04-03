@@ -39,5 +39,10 @@ namespace StoloviePribori
             new MainWindow().Show();
             Close();
         }
+
+        private void openProductsPage_Click(object sender, RoutedEventArgs e)
+        {
+            frameForPages.Navigate(new Pages.ProductsPage(user));
+        }
     }
 }
