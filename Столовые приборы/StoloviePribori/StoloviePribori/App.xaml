@@ -12,6 +12,7 @@
         </Style>
 
         <Brush x:Key="Color2">#FF76E383</Brush>
+        <Brush x:Key="Color9">#eee</Brush>
         <Brush x:Key="Color3">#FF498C51</Brush>
         
     </Application.Resources>

@@ -6,9 +6,7 @@
         xmlns:local="clr-namespace:StoloviePribori"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="500">
-    
-    
-    
+
     <Grid>
         <StackPanel HorizontalAlignment="Center" Background="{DynamicResource Color2}">
             <Label Content="Авторизация" HorizontalAlignment="Center"/>

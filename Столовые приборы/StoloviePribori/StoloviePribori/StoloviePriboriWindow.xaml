@@ -21,12 +21,73 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20*"/>
                 <ColumnDefinition Width="80*"/>
+                <ColumnDefinition x:Name="ActionColumn" Width="0"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Background="{DynamicResource Color3}">
-                <Button Height="30" Margin="20" Background="White" Content="Товары" x:Name="openProductsPage" Click="openProductsPage_Click"/>
+                <Button Height="30" Margin="20" Background="White" Content="Товары" x:Name="openProductsPage" />
             </StackPanel>
-            <StackPanel Grid.Column="1">
-                <Frame NavigationUIVisibility="Hidden" x:Name="frameForPages"/>
+            <DockPanel Grid.Column="1">
+                <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="50">
+                    <Button Background="{DynamicResource Color2}" Width="90" Height="25" Margin="5" Content="Создать" Visibility="Collapsed" x:Name="AddProduct" Click="AddProduct_Click"/>
+                    <Button Background="{DynamicResource Color2}" Width="90" Height="25" Margin="5" Content="Редактировать" Visibility="Collapsed" x:Name="EditProduct" Click="EditProduct_Click" />
+                </StackPanel>
+                <ListBox x:Name="productsListBox">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel Width="500" Height="80" Margin="5" Background="{Binding Background}">
+                                <Image VerticalAlignment="Center" Width="50" Source="{Binding ProductPhoto}"/>
+                                <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="5 0 0 0">
+                                    <TextBlock Text="{Binding Path=ProductName}" FontWeight="Bold"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="10" Text="{Binding ProductDescription}" />
+                                    <TextBlock FontSize="10" Text="{Binding ProductManufacturer}" />
+                                    <TextBlock FontSize="10" Text="{Binding ProductCost}" />
+                                </StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontSize="10" Text="{Binding ProductQuantityInStock}" Margin="5 0 0 0"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </DockPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="2">
+                <StackPanel VerticalAlignment="Center">
+                    <Label x:Name="actionName"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductNameTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductDescriptionTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductCategoryTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductManufactureTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductCostTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductDiscountAmountTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductQuantityInStockTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="100" Content="имя продукта"/>
+                    <TextBox Width="300" x:Name="ProductStatusTextBox"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="100" x:Name="Apply" Content="Принять" Click="Apply_Click"/>
+                    <Button Width="100" x:Name="Cancel" Content="Отменить" Click="Cance_Click"/>
+                </StackPanel>
             </StackPanel>
         </Grid>
     </Grid>

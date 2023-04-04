@@ -46,5 +46,3 @@ D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\Stolo
 D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\StoloviePribori.csproj.CopyComplete
 D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\StoloviePribori.exe
 D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\StoloviePribori.pdb
-D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\Pages\ProductsPage.g.cs
-D:\4is2\babaev\ExamPreparationClientServer\Столовые приборы\StoloviePribori\StoloviePribori\obj\Debug\Pages\ProductsPage.baml
